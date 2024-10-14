@@ -11,20 +11,35 @@ public class Exercise04 {
         System.out.println("Ejemplos de cálculos CON estructuras de control:");
 
     }
-
+    // Método que suma los primeros 'num' números enteros
     public static int sumNum(int num) {
-        return 0;
+        int sum = 0;
+        for (int i = 1; i <= num; i ++) {
+            sum += i;
+        }
+        return sum;
     }
-
+    // Método que suma los primeros 'num' números enteros pares
     public static int sumEvenNum(int num) {
-        return 0;
+        int sum = 0;
+        for (int i = 1; i <= num; i++) {
+            sum += 2 * i; // Sumar los números pares
+        }
+        return sum;
     }
-
+    // Método que calcula el factorial de 'num'
     public static int factorial(int num) {
-        return 0;
+        int result = 1;
+        for (int i = 1; i <= num; i++) {
+            result *=i;
+        }
+        return result;
     }
-
+    // Método que calcula el factorial de 'num' usando recursión
     public static int recursiveFactorial(int num) {
-        return 0;
+        if (num == 0) {
+            return 1; // Caso base: 0! es 1
+        }
+        return num * recursiveFactorial(num -1);// Llamada recursiva
     }
 }
